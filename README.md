@@ -1,3 +1,8 @@
+Table of Content
+- [Pseudocode of Brute Force Algorithm to solve Travelling Salesperson Problem](https://github.com/benthen/brute-force/tree/main#pseudocode-of-brute-force-algorithm-to-solve-travelling-salesperson-problem)
+- [Demo video](https://github.com/benthen/brute-force/tree/main#demo-video)
+- [Analysis of Brute Force ALgorithm](https://github.com/benthen/brute-force/tree/main#analysis-of-brute-force-algorithm)
+
 # Pseudocode of Brute Force Algorithm to solve Travelling Salesperson Problem 
 
 1. Start
@@ -91,7 +96,7 @@ https://github.com/benthen/brute-force/assets/111986781/342982ba-b4a4-4ccf-bc3b-
 
 > These functions work together to find the shortest distance that can be formed from the permutation of cities in the most efficient manner. 
 
-## Using brute force to show the algorithm correctness
+## Algorithm correctness
 - Number of cities : 4
 - Name of cities : Kuala Lumpur, Klang, Johor Bahru, Subang Jaya
 
