@@ -77,9 +77,20 @@
 
 # Analysis of Brute Force ALgorithm
 
-## Using brute force to show the algorithm correctness : 
+* This method employs the recursive backtracking algorithm paradigm, which generates every possible permutation of cities and computes the total distance travelled for each permutation.
+> The minimal distance is determined and updated with each permutation. 
+
+* The part in the algorithm that uses recursion is the ‘generatePermutations’ function which is responsible for generating all possible permutations of cities.
+  
+* The function will take the index ‘1’ assuming the first city is fixed. Then it will continue generating possible permutations by swapping the current cities with the remaining ones and invoking itself in a recursive manner with an increased index to produce permutations for the remaining cities. Until all cities have been taken into account, this recursive process continues. 
+
+* The function for optimisation in this algorithm is ‘calculateCost’. It calculates the cost (total distance) of a given permutation of cities. The optimisation occurs within the ‘calculateCostRecursively’ function, which is called recursively to calculate the cost of each subpath within a permutation.
+
+> These functions work together to find the shortest distance that can be formed from the permutation of cities in the most efficient manner. 
+
+## Using brute force to show the algorithm correctness
 - Number of cities : 4
-- Name of cities : Kuala Lumpur, Klang, Johor Bahru ,Subang Jaya
+- Name of cities : Kuala Lumpur, Klang, Johor Bahru, Subang Jaya
 
 - City distance matrix : 
 # ![image](https://github.com/benthen/algo/assets/111986781/2b0478b4-db1e-4397-b1f5-6599adda5caf)
@@ -91,24 +102,24 @@ Possible permutations : 4! = 24
 - [ Kuala Lumpur, Johor Bahru, Klang, Subang Jaya ] = 335 + 351 + 24 + 26 = 739
 - [ Kuala Lumpur, Johor Bahru, Subang Jaya, Klang ] = 335 + 338 + 24 + 39 = 736
 - [ Kuala Lumpur, Subang Jaya, Klang, Johor Bahru ] = 26 + 24 + 351 + 335 = 736
-- [ Kuala Lumpur, Subang Jaya, Johor Bahru, Klang ] = 26 + 338 + 351 +39 =  754
+- [ Kuala Lumpur, Subang Jaya, Johor Bahru, Klang ] = 26 + 338 + 351 + 39 = 754
 - [ Klang, Kuala Lumpur, Johor Bahru, Subang Jaya ] = 39 + 335 + 338 + 24 = 736
 - [ Klang, Kuala Lumpur, Subang Jaya, Johor Bahru ] = 39 + 26 + 338 + 351 = 754
 - [ Klang, Johor Bahru, Kuala Lumpur, Subang Jaya ] = 351 + 335 + 26 + 24 = 736
 - [ Klang, Johor Bahru ,Subang Jaya, Kuala Lumpur ] = 351 + 338 + 26 + 39 = 754
 - [ Klang, Subang Jaya, Kuala Lumpur, Johor Bahru ] = 24 + 26 + 335 + 351 = 736
-- [ Klang, Subang Jaya, Johor Bahru, Kuala Lumpur ] = 24 + 338 + 335 + 39= 736
+- [ Klang, Subang Jaya, Johor Bahru, Kuala Lumpur ] = 24 + 338 + 335 + 39 = 736
 - [ Johor Bahru, Kuala Lumpur, Klang, Subang Jaya ] = 335 + 39 + 24 + 338 = 736
 - [ Johor Bahru, Kuala Lumpur, Subang Jaya, Klang ] = 335 + 26 + 24 + 351 = 736
 - [ Johor Bahru, Klang, Kuala Lumpur, Subang Jaya ] = 351 + 39 + 26 + 338 = 754
 - [ Johor Bahru, Klang, Subang Jaya, Kuala Lumpur ] = 351 + 24 + 26 + 335 = 736
 - [ Johor Bahru, Subang Jaya, Kuala Lumpur, Klang ] = 338 + 26 + 39 + 351 = 754
-- [ Johor Bahru, Subang Jaya, Klang, Kuala Lumpur ] =338 + 24 + 39 + 335 = 736
+- [ Johor Bahru, Subang Jaya, Klang, Kuala Lumpur ] = 338 + 24 + 39 + 335 = 736
 - [ Subang Jaya, Kuala Lumpur, Klang, Johor Bahru ] = 26 + 39 + 351 + 338 = 754
 - [ Subang Jaya, Kuala Lumpur, Johor Bahru, Klang ] = 26 + 335 + 351 + 24 = 736
 - [ Subang Jaya, Klang, Kuala Lumpur, Johor Bahru ] = 24 + 39 + 335 + 338 = 736
 - [ Subang Jaya, Klang, Johor Bahru, Kuala Lumpur ] = 24 + 351 + 335 + 26 = 736
-- [ Subang Jaya, Johor Bahru, Kuala Lumpur, Klang ] = 338+ 335 + 39 + 24 = 736
+- [ Subang Jaya, Johor Bahru, Kuala Lumpur, Klang ] = 338 + 335 + 39 + 24 = 736
 - [ Subang Jaya, Johor Bahru, Klang, Kuala Lumpur ] = 338 + 351 + 39 + 26 = 754
 
 > - The minimum distance travelled: 736
@@ -120,7 +131,7 @@ Possible permutations : 4! = 24
   - Best case : O(k) -> k=0-> O(0) -> O(1)
 - Best case would be when the cityNum is 0. The algorithm will not have to do any recursive call and will terminate right away. 
 - Average and worst case : O(n!)
-- Average and worst case is when the algorithm has to find minimum distance for every permutation which is n! , the number of distances to calculate. 
+- Average and worst case is when the algorithm has to find minimum distance for every permutation which is n!, the number of distances to calculate. 
 
 
 
