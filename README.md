@@ -127,11 +127,13 @@ Possible permutations : 4! = 24
 > - Path taken: Kuala Lumpur -> Johor Bahru -> Subang Jaya -> Klang -> Kuala Lumpur
 
 
-- Algorithm complexity:
-  - Best case : O(k) -> k=0-> O(0) -> O(1)
-- Best case would be when the cityNum is 0. The algorithm will not have to do any recursive call and will terminate right away. 
-- Average and worst case : O(n!)
-- Average and worst case is when the algorithm has to find minimum distance for every permutation which is n!, the number of distances to calculate. 
+## Algorithm complexity:
+- Best case
+    - O(k) -> k=0-> O(0) -> O(1)
+    - Best case would be when the cityNum is 0. The algorithm will not have to do any recursive call and will terminate right away. 
+- Average and worst case 
+    - O(n!)
+    - Average and worst case is when the algorithm has to find minimum distance for every permutation which is n!, the number of distances to calculate. 
 
 
 
