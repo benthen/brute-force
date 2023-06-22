@@ -73,7 +73,10 @@
     3. print path[0] + 1 
     4. End
 
-9. End 
+9. End
+
+# Demo video
+https://github.com/benthen/brute-force/assets/111986781/342982ba-b4a4-4ccf-bc3b-e0f41960fc4e
 
 # Analysis of Brute Force ALgorithm
 
