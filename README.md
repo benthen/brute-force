@@ -101,7 +101,7 @@ https://github.com/benthen/brute-force/assets/111986781/342982ba-b4a4-4ccf-bc3b-
 - Name of cities : Kuala Lumpur, Klang, Johor Bahru, Subang Jaya
 
 - City distance matrix : 
-# ![image](https://github.com/benthen/algo/assets/111986781/2b0478b4-db1e-4397-b1f5-6599adda5caf)
+![image](https://github.com/benthen/brute-force/assets/111986781/617cfd91-ce98-4626-9377-c8a80b33d584)
 
 Possible permutations : 4! = 24
 
